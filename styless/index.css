@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+header {
+    display: flex;
+    background-color: #306bb3;
+    height: 8vh;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2vh 2vw;
+    font-size: small;
+}
+.list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 30px;
+    margin: 0 3vw 0 5vw;
+}
+
+.list li:hover {
+    text-decoration: underline white;
+}
+
+.list1 {
+    display: flex;
+    width: 30vw;
+    align-items: center;
+}
+.list a {
+    color: white;
+    text-decoration: none;
+}
+.indexmain {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    justify-content: space-around;
+    padding: 50px;
+}
+main .imagen{
+    width: 40%;
+}
+.indexsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    gap: 30px;
+}
+section p{
+    font-size: 0.8rem;
+}
+.links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0 50px;
+    gap: 10vw;
+}
+.links a{
+    text-decoration: none;
+    color: black;
+}
+footer {
+    background-color: #306bb3;
+    display: flex;
+    flex-direction: row;
+    padding: 0 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.vision {
+    justify-content: space-around;
+    color: white;
+    width: 50%;
+    padding: 15px 20px;
+}
+.columns {
+    /* column-count: 3; */
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-right: 100px;
+    color:white
+}
+.vision p{
+    margin: 20px 0;
+    font-size: 0.8rem;
+}
+.redes-icons{
+    width: 50px;
+    transition: all 0.3s ease;
+}
+.redes-icons:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.logo-pokemon{
+    width: 100px;
+}
+
+.columns h4{
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+.columns li {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    list-style: none;
+}
+.columns a{
+    text-decoration: none;
+    color: white;
+}

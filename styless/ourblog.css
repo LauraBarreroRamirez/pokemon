@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+main h1{
+    color: #486284;
+}
+
+.ourblogmain {
+color: #1A202C;
+font-size: small;
+text-align: center;
+margin: 5vh;
+}
+
+.ourblogimg {
+    column-count: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.ourblogsection {
+    margin: 2vh;
+}
+
+.ourblogp {
+    text-align: left;
+    margin-left: 8vh;
+}
+
+.ourblogimg2 {
+  width: 24.3vw;
+}
+
+

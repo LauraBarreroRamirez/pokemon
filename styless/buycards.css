@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.buycardsmain {
+    font-size: small;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5vh;
+}
+
+.buycardstitle {
+    color: #486284;
+}
+
+.buycardsp {
+    margin: 3vh;
+}
+
+.buycardslinks {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 20px ;
+    color: #1A202C;
+    list-style: none;
+}
+
+.buycardslinks li{
+    padding: 10px 0;
+    border-bottom: 2px solid rgb(0, 0, 0, 0.3);
+}
+.buycardslinks li a{
+    text-decoration: none;
+    color: #1A202C;
+}
+.buycardslinks li:hover{
+    border-bottom: 3px solid rgb(0, 0, 0, 1);
+    cursor: pointer;
+}
+
+.buycardscontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.figurebuycards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+.figurebuycards img{
+    margin-top: 50px;
+}
+
+.buttonbuycards {
+    background-color: #306BB3;
+    color: white;
+    margin: 50px;
+    padding: 19px;
+    border-radius: 4px;
+    border: transparent;
+    cursor: pointer;
+}

@@ -54,8 +54,9 @@
 .figurebuycards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin: 10px;
     border: 1px solid red;
+    justify-content: space-between;
 }
 
 .figurebuycards img{
@@ -70,4 +71,33 @@
     border-radius: 4px;
     border: transparent;
     cursor: pointer;
+}
+
+.pokemon-card {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 30px;
+    padding: 20px;
+    background-color: #DEE5ED;
+    border-radius: 3%;
+    border: 5px solid darkblue;
+    aspect-ratio: 15/16;
+    width: 20%
+}
+
+/* .pokemon-header {
+    color: #1A202C;
+    line-height: 150%;  
+} */
+
+.pokemon-img {
+    background-color: #FFFFFF;
+    border-radius: 3%;
+    border: 5px solid darkblue;
+    width: 85%;
+    aspect-ratio: 15/16;
+}
+
+.pokemon-footer {
+    
 }

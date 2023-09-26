@@ -17,9 +17,9 @@
         <div class="list1">
             <nav>
                 <ul class="list">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/buycards.html">Buy Cards</a></li>
-                    <li><a href="/ourblog.html">Our Blog</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./buycards.html">Buy Cards</a></li>
+                    <li><a href="./ourblog.html">Our Blog</a></li>
                 </ul>
             </nav>
             <button>Dark Mode</button>
@@ -32,31 +32,12 @@
         </div>
         <div class="buycardscontainer">
             <div class="buycardslinks">
-                <li><a href="/">All</a></li>
-                <li><a href="/">Air</a></li>
-                <li><a href="/">Fire</a></li>
-                <li><a href="/">Water</a></li>
+                <li onclick="getPokemons(0)">All</li>
+                <li onclick="filterPokemons(3)">Air</button></li>
+                <li onclick="filterPokemons(10)">Fire</button></li>
+                <li onclick="filterPokemons(11)">Water</button></li>
             </div>
-            <div id="pokemons-container" class="figurebuycards">
-                <!-- <div class="pokemon-card">
-                    <div class="pokemon-header">
-                        <p>Nombre pokemon</p> 
-                    </div>
-                    <img src="" alt="">
-                    <div class="pokemon-footer">
-                        <p>Power</p>
-                        <button>BUY</button>
-                    </div>
-                </div> -->
-                <!-- <img src="./assets/Catalogue Car 1.png" alt="catalog1">
-                <img src="./assets/Catalogue Car 2.png" alt="catalog2">
-                <img src="./assets/Catalogue Car 3.png" alt="catalog3">
-                <img src="./assets/Catalogue Car 4.png" alt="catalog4">
-                <img src="./assets/Catalogue Car 1.png" alt="catalog1">
-                <img src="./assets/Catalogue Car 2.png" alt="catalog2">
-                <img src="./assets/Catalogue Car 3.png" alt="catalog3">
-                <img src="./assets/Catalogue Car 4.png" alt="catalog4"> -->
-            </div>
+            <div id="pokemons-container" class="figurebuycards"></div>
         </div>
         <div>
             <button class="buttonbuycards" onclick="getMorePokemons()">Show more cards</button>
@@ -65,10 +46,16 @@
     <footer>
         <div class="vision">
             <img class="logo-pokemon" src="./assets/logo.png" alt="logoPokemon">
-            <p>Our vision is to provide convenience <br> and help increase your sales business </p>
-            <img class="redes-icons" src="./assets/Facebook.png" alt="logoFacebook">
-            <img class="redes-icons" src="./assets/Twitter.png" alt="logoTwitter">
-            <img class="redes-icons" src="./assets/Instagram.png" alt="logoInstagram">
+            <p>Our vision is to provide convenience <br> and help increase your sales business. </p>
+            <a href="https://www.facebook.com/Pokemon/?locale=es_LA" target="_blank">
+                <img class="redes-icons" src="./assets/Facebook.png" alt="logoFacebook" >
+            </a>
+            <a href="https://twitter.com/Pokemon?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                <img class="redes-icons" src="./assets/Twitter.png" alt="logoTwitter">
+            </a>    
+            <a href="https://www.instagram.com/pokemon/?hl=es" target="_blank">
+                <img class="redes-icons" src="./assets/Instagram.png" alt="logoInstagram">
+            </a>
         </div>
         <div class="columns">
             <div> 
@@ -94,10 +81,10 @@
                     Socials
                 </h4>
                 <ul>
-                    <li><a href="/">Discord</a></li>
-                    <li><a href="/">Instagram</a></li>
-                    <li><a href="/">Twitter</a></li>
-                    <li><a href="/">Facebook</a></li>
+                    <li><a href="https://discord.com/invite/cpokemon" target="_blank">Discord</a></li>
+                    <li><a href="https://www.instagram.com/pokemon/?hl=es" target="_blank">Instagram</a></li>
+                    <li><a href="https://twitter.com/Pokemon?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.facebook.com/Pokemon/?locale=es_LA" target="_blank">Facebook</a></li>
                 </ul>
             </div>
         </div>

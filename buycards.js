@@ -42,4 +42,29 @@ function getMorePokemons() {
     getPokemons(count)
 }
 
+//limpiar cartas
+function removePokemon () {
+    if (figurebuycards.hasChildNodes()){
+        let children = figurebuycards.childNodes
+        const nodeLength = children.length
+        for (let i = 0; i < nodeLength; i++) {
+            figurebuycards.removeChild(children[0])
+        }
+    }
+
+}
+
+//filtros
+function filterPokemons(numberType, offset) {
+    removePokemon()
+    fetch(`https://pokeapi.co/api/v2/type/${numberType}${offset}&limit=20`)
+    .then((response) => response.json())
+    .then((response) => {
+        response.pokemon.forEach((pokemon) => {
+            getPokemonData(pokemon.pokemon.url)
+        })
+    })
+    .catch((error) => console.log(error))
+}
+
 getPokemons(count)

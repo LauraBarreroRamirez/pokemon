@@ -30,6 +30,9 @@
     margin-bottom: 20px ;
     color: #1A202C;
     list-style: none;
+    font-size: medium;
+    margin: 1px;
+    padding: 25px;
 }
 
 .buycardslinks li{
@@ -54,12 +57,12 @@
 .figurebuycards {
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
+    /* padding: 10px 50px; */
     justify-content: space-between;
 }
 
 .figurebuycards img{
-    margin-top: 1rem;
+    margin-top: 10px;
 }
 
 .buttonbuycards {
@@ -96,7 +99,7 @@
     background-color: #306BB3; /*color boton*/
     color: white;   /*color texto*/
     /* margin: 15px;  */
-    padding: 10px 35px; /*espacio alrededor texto*/
+    padding: 10px 40px; /*espacio alrededor texto*/
     border-radius: 4px; /*borde redondeado*/
     border: transparent; /*borde transparente*/
     cursor: pointer; /*cursor de mano*/
@@ -106,5 +109,28 @@
 
 .pokemon-footer {
     display: inline-flex;
-    justify-content: space-between;   
+    justify-content: space-between; 
+    align-items: flex-end;  
+    width: 85%; /*ancho del footer*/
+    padding: 8px 0 1px;
+}
+
+.pokemon-footer p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight:900;
+    color:black;
+    padding: 10px 0;
+}
+
+.pokemon-header {
+    align-items: flex-end;
+    
+}
+
+.pokemon-header p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight:900;
+    color: black
 }

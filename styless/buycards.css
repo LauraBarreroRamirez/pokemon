@@ -93,5 +93,18 @@
 }
 
 .btn-buy {
+    background-color: #306BB3; /*color boton*/
+    color: white;   /*color texto*/
+    /* margin: 15px;  */
+    padding: 10px 35px; /*espacio alrededor texto*/
+    border-radius: 4px; /*borde redondeado*/
+    border: transparent; /*borde transparente*/
+    cursor: pointer; /*cursor de mano*/
     
+}
+.btn-buy:hover {background: #106cb8;}
+
+.pokemon-footer {
+    display: inline-flex;
+    justify-content: space-between;   
 }

@@ -38,7 +38,7 @@ function addPokemonIntoHTML(pokemon) {
         <img class="pokemon-img" src="${pokemon.sprites.front_default}" alt="">
         <div class="pokemon-footer">
             <p>Power ${pokemon.base_experience}</p>
-            <button class="btn-buy">BUY</button>
+            <button class="btn-buy">Buy</button>
         </div>
     `
     figurebuycards.appendChild(pokemonCard)

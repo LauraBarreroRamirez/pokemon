@@ -6,8 +6,18 @@
     padding: 0;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
-.buycardsmain {
-    font-size: small;
+/*main*/
+.buycardsmain{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5vh;
+    height: 100%;
+}
+
+.buycardsmaintitulo {
+    font-size: medium;
     text-align: center;
     display: flex;
     align-items: center;
@@ -23,22 +33,25 @@
     margin: 3vh;
 }
 
+/*links para filtrar*/
+
 .buycardslinks {
     display: grid;
-    width: 100%;
+    width: 90%;
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 20px ;
     color: #1A202C;
     list-style: none;
     font-size: medium;
-    margin: 1px;
-    padding: 25px;
+    margin: 1x;
+    padding: 25px; 
 }
 
 .buycardslinks li{
     padding: 10px 0;
     border-bottom: 2px solid rgb(0, 0, 0, 0.3);
 }
+
 .buycardslinks li a{
     text-decoration: none;
     color: #1A202C;
@@ -48,52 +61,64 @@
     cursor: pointer;
 }
 
-.buycardscontainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+/*contenedor cards*/
 .figurebuycards {
-    display: flex;
-    flex-wrap: wrap;
-    /* padding: 10px 50px; */
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 85%;
 }
 
-.figurebuycards img{
-    margin-top: 10px;
-}
-
-.buttonbuycards {
-    background-color: #306BB3;
-    color: white;
-    margin: 50px;
-    padding: 19px;
-    border-radius: 4px;
-    border: transparent;
-    cursor: pointer;
-}
-
+/*tarjeta*/
 .pokemon-card {
     display: flex;
     flex-direction: column;
-    margin: 30px 30px;
-    padding: 20px;
+    margin: 10px 10px; /*espacio entre cards*/
+    padding: 10px;
     background-color: #DEE5ED;
-    border-radius: 3%;
-    border: 5px solid darkblue;
-    aspect-ratio: 15/16;
-    width: 20%
+    border-radius: 5%;
+    aspect-ratio: 15/16; /*ancho/alto */
+}
+
+.pokemon-header {
+    display: inline-flex;
+    justify-content: space-between; 
+    align-items: flex-end;  
+    width: 85%; /*ancho del footer*/
+    padding: 8px 8px 5px 20px;
+    
+}
+
+.pokemon-header p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight:900;
+    color: black;
+    text-transform: capitalize;
 }
 
 .pokemon-img {
     background-color: #FFFFFF;
-    border-radius: 3%;
-    border: 5px solid darkblue;
+    border-radius: 5%;
     width: 85%;
     aspect-ratio: 15/16;
 }
+
+.pokemon-footer {
+    display: inline-flex;
+    justify-content: space-between; 
+    align-items: flex-end;  
+    width: 85%; /*ancho del footer*/
+    padding: 8px 8px 5px 20px;
+}
+
+.pokemon-footer p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight:900;
+    color:black;
+    padding: 10px 0;
+}
+
 
 .btn-buy {
     background-color: #306BB3; /*color boton*/
@@ -107,30 +132,21 @@
 }
 .btn-buy:hover {background: #106cb8;}
 
-.pokemon-footer {
-    display: inline-flex;
-    justify-content: space-between; 
-    align-items: flex-end;  
-    width: 85%; /*ancho del footer*/
-    padding: 8px 0 1px;
+.buttonbuycards {
+    background-color: #306BB3;
+    color: white;
+    margin: 50px;
+    padding: 19px;
+    border-radius: 4px;
+    border: transparent;
+    cursor: pointer;
 }
 
-.pokemon-footer p {
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight:900;
-    color:black;
-    padding: 10px 0;
-}
 
-.pokemon-header {
-    align-items: flex-end;
-    
-}
 
-.pokemon-header p {
-    margin: 0;
-    font-size: 1rem;
-    font-weight:900;
-    color: black
-}
+
+
+
+
+
+

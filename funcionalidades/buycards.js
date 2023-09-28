@@ -34,8 +34,12 @@ function addPokemonIntoHTML(pokemon) {
     pokemonCard.className = 'pokemon-card'
     pokemonCard.innerHTML = `
         <div class="pokemon-header">
-        <p>${pokemon.name}</p>
-        <img class="pokemon-img" src="${pokemon.sprites.front_default}" alt="">
+            <p>${pokemon.name}</p>
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <section>
+            <img class="pokemon-img" src="${pokemon.sprites.other["home"].front_default }" alt="">
+        </section>
         <div class="pokemon-footer">
             <p>Power ${pokemon.base_experience}</p>
             <button class="btn-buy">Buy</button>

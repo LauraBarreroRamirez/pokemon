@@ -1,5 +1,8 @@
 const figurebuycards = document.getElementById('pokemons-container')
+let pokemons = []
+let page = 1
 let count = 0
+let isFiltering = false
 
 function getPokemonData (url) {
     fetch (url)
@@ -10,8 +13,12 @@ function getPokemonData (url) {
     .catch((error) => console.log(error))
 }
 
-function getPokemons (offset) {
-    fetch (`https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=20`)
+function getAllPokemons (count) {
+    removePokemon()
+    isFiltering = false
+    pokemons = []
+    page = 1
+    fetch (`https://pokeapi.co/api/v2/pokemon?limit=${count}`)
         .then((response) => response.json())
         .then((response) => {
             response.results.forEach((pokemon) => {
@@ -39,7 +46,7 @@ function addPokemonIntoHTML(pokemon) {
 
 function getMorePokemons() {
     count += 20 
-    getPokemons(count)
+    getPokemons(isFiltering)
 }
 
 //limpiar cartas
@@ -55,16 +62,32 @@ function removePokemon () {
 }
 
 //filtros
-function filterPokemons(numberType, offset) {
+function filterPokemons(name) {
     removePokemon()
-    fetch(`https://pokeapi.co/api/v2/type/${numberType}${offset}&limit=20`)
+    isFiltering = true
+    fetch(`https://pokeapi.co/api/v2/type/${name}`)
     .then((response) => response.json())
     .then((response) => {
-        response.pokemon.forEach((pokemon) => {
-            getPokemonData(pokemon.pokemon.url)
-        })
+        pokemons = response.pokemon
+        page = 1
+        pagination(page)
     })
     .catch((error) => console.log(error))
 }
 
-getPokemons(count)
+function pagination(pageIndex) {
+    const newPokemon = pokemons.slice((pageIndex - 1) * 20, pageIndex * 20)
+    newPokemon.forEach((pokemon) => {
+        getPokemonData(pokemon.pokemon.url)
+    })
+}
+
+function getPokemons(filter){
+    if (!filter) {
+        getAllPokemons(count)
+    } else {
+        filterPokemons(filter)
+    }
+}
+
+getAllPokemons(count)

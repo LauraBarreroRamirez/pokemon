@@ -55,12 +55,11 @@
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
-    border: 1px solid red;
     justify-content: space-between;
 }
 
 .figurebuycards img{
-    margin-top: 50px;
+    margin-top: 1rem;
 }
 
 .buttonbuycards {
@@ -85,11 +84,6 @@
     width: 20%
 }
 
-/* .pokemon-header {
-    color: #1A202C;
-    line-height: 150%;  
-} */
-
 .pokemon-img {
     background-color: #FFFFFF;
     border-radius: 3%;
@@ -98,6 +92,6 @@
     aspect-ratio: 15/16;
 }
 
-.pokemon-footer {
+.btn-buy {
     
 }

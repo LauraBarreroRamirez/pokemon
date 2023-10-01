@@ -35,13 +35,13 @@ function addPokemonIntoHTML(pokemon) {
     pokemonCard.innerHTML = `
         <div class="pokemon-header">
             <p>${pokemon.name}</p>
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa fa-heart"></i>
         </div>
         <section>
             <img class="pokemon-img" src="${pokemon.sprites.other["home"].front_default }" alt="">
         </section>
         <div class="pokemon-footer">
-            <p>Power ${pokemon.base_experience}</p>
+            <p>${pokemon.base_experience}</p>
             <button class="btn-buy">Buy</button>
         </div>
     `
@@ -93,5 +93,13 @@ function getPokemons(filter){
         filterPokemons(filter)
     }
 }
+
+// function clickLike () {
+//     const like = document.getElementById('like')
+//     like.addEventListener('click', () => {
+//         like.classList.toggle('heart-regular')
+//         like.classList.toggle('heart-solid')
+//     })
+// }
 
 getAllPokemons(count)

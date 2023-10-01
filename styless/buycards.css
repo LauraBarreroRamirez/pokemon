@@ -72,8 +72,7 @@
 .pokemon-card {
     display: flex;
     flex-direction: column;
-    margin: 10px 10px; /*espacio entre cards*/
-    padding: 10px;
+    margin: 10px 10px; 
     background-color: #DEE5ED;
     border-radius: 5%;
     aspect-ratio: 15/16; /*ancho/alto */
@@ -83,8 +82,8 @@
     display: inline-flex;
     justify-content: space-between; 
     align-items: flex-end;  
-    width: 85%; /*ancho del footer*/
-    padding: 8px 8px 5px 20px;
+    width: 90%; /*ancho del footer*/
+    padding: 20px 0 10px 20px;
     
 }
 
@@ -108,27 +107,27 @@
     justify-content: space-between; 
     align-items: flex-end;  
     width: 85%; /*ancho del footer*/
-    padding: 8px 8px 5px 20px;
+    padding: 8px 0 15px 0;
+    margin-left: 18px;
 }
 
 .pokemon-footer p {
-    margin: 0;
+    margin: 15px 0;
     font-size: 1.2rem;
     font-weight:900;
     color:black;
-    padding: 10px 0;
+    padding: 0 0 0 2px;
 }
-
 
 .btn-buy {
     background-color: #306BB3; /*color boton*/
     color: white;   /*color texto*/
-    /* margin: 15px;  */
+    margin: 10px 0; /*espacio entre botones*/
     padding: 10px 40px; /*espacio alrededor texto*/
-    border-radius: 4px; /*borde redondeado*/
+    border-radius: 5px; /*borde redondeado*/
     border: transparent; /*borde transparente*/
     cursor: pointer; /*cursor de mano*/
-    
+    font-size: medium;
 }
 .btn-buy:hover {background: #106cb8;}
 
@@ -140,8 +139,17 @@
     border-radius: 4px;
     border: transparent;
     cursor: pointer;
+    font-size: medium;
 }
 
+.buttonbuycards:hover {background: #106cb8;}
+
+/* .heart {
+    color: #306BB3;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+} */
 
 
 

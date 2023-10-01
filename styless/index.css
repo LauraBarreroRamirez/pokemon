@@ -9,7 +9,7 @@
 header {
     display: flex;
     background-color: #306bb3;
-    height: 8vh;
+    height: 10vh;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;

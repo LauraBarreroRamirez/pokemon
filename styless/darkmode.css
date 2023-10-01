@@ -1,0 +1,13 @@
+main {
+    color: white;
+    background-color: #1A202C;
+    transition: 0.5s ease-in-out;
+}
+
+.indexmain {
+    color : white;
+}
+
+.links li a {
+    color: white;
+}

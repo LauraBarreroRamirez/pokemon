@@ -1,4 +1,4 @@
-*{
+/* *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ main {
 }
 
 /*estilo del boton dark mode*/
-.buttondarkmode{
+/* .buttondarkmode{
     background-color: #1A202C;
     border-radius: 5px;
     color: white;
@@ -22,10 +22,10 @@ main {
     display: inline-block;
     border: transparent; 
     cursor: pointer; 
-}
+} */
 
 /* estilos del index*/
-.indexmain {
+/* .indexmain {
     color : white;
 }
 
@@ -59,10 +59,10 @@ main {
         border: transparent; 
         cursor: pointer; 
         font-weight: bold;
-}
+} */
 
 /*estilos del buycards*/
-.buycardstitle {
+/* .buycardstitle {
     color: white;
 }
 
@@ -99,13 +99,13 @@ main {
 
 .fa-heart {
     color: black;
-}
+} */
 
 /*estilos del our blog*/
-.ourblogmain{
+/* .ourblogmain{
     color: white;
 }
 
 .ourblogmain h1{
     color: white;
-}
+}  */
